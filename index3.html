@@ -31,13 +31,13 @@
         result = num1-num2;
         break;
     }
-    let imparpar = result%2;
+    let imparpar = (result%2) == 0;
     let par = ""
     switch(imparpar){
-        case"0":
+        case true:
             par = "Par"
             break;
-        case"1":
+        case false:
             par = "Impar"
             break;
     }
@@ -56,9 +56,9 @@
             inteiro = "Inteiro"
             break;
         case false :
-            inteiro = "Negativo"
+            inteiro = "Decimal"
             break;
     }
     //SAÍDA
-    alert(`${result} ${positivo} ${inteiro} ${par}`);
+    alert(`${result}, ${positivo}, ${inteiro}, ${par}`);
 </script>
